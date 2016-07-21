@@ -3,6 +3,13 @@
 This is a docker implementation of 
 [jcjohnson neural-style](https://github.com/jcjohnson/neural-style/) solution.
 
+This docker container allows you to easily run complicated neural networks with any of your images.
+Just install this docker container, run one command and get result. No configuration required.
+
+Latest version available on 
+github [https://github.com/ffedoroff/neural-style](https://github.com/ffedoroff/neural-style) and 
+docker-hub [https://hub.docker.com/r/ffedoroff/neural-style/](https://hub.docker.com/r/ffedoroff/neural-style/)
+
 # original description (by jcjohnson)
 
 This is a torch implementation of the paper [A Neural Algorithm of Artistic Style](http://arxiv.org/abs/1508.06576)
