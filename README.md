@@ -3,7 +3,7 @@
 This is a docker implementation of 
 [jcjohnson neural-style](https://github.com/jcjohnson/neural-style/) solution.
 
-# original decryption (by jcjohnson)
+# original description (by jcjohnson)
 
 This is a torch implementation of the paper [A Neural Algorithm of Artistic Style](http://arxiv.org/abs/1508.06576)
 by Leon A. Gatys, Alexander S. Ecker, and Matthias Bethge.
