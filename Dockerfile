@@ -1,4 +1,4 @@
-FROM debian:8.5
+FROM ubuntu:14.04
 MAINTAINER ffedoroff "rfedorov@linkentools.com"
 
 ENV DEBIAN_FRONTEND noninteractive
@@ -21,5 +21,12 @@ RUN /root/torch/install/bin/luarocks install loadcaffe
 WORKDIR /root
 RUN git clone --depth 1 https://github.com/jcjohnson/neural-style.git
 
+# load models (about 500MB)
 WORKDIR /root/neural-style
-#RUN bash models/download_models.sh
+RUN bash models/download_models.sh
+
+RUN ln -s /root/torch/install/bin/th /bin/th
+
+COPY docker-entrypoint.sh /root/
+ENTRYPOINT ["/root/docker-entrypoint.sh"]
+#CMD ["/cron.sh"]
